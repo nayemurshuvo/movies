@@ -15,7 +15,7 @@ const TableHeader = ({ columns, onSort, sortColumn }) => {
       <tr>
         {columns.map((column) => (
           <th onClick={() => handleSort(column.path)} key={column.label} scope="col">
-            {column.label}  {sortColumn.path === column.path? sortColumn.order === 'asc'? <i class="bi bi-sort-down"></i> : <i class="bi bi-sort-down-alt"></i>: nu}
+            {column.label}  {sortColumn.path === column.path? sortColumn.order === 'asc'? <i class="bi bi-sort-down"></i> : <i class="bi bi-sort-down-alt"></i>: null}
           </th>
         ))}
       </tr>

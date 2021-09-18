@@ -68,6 +68,7 @@ class Movies extends Component {
     return (
       <>
         <div className="row">
+          <h2 className="text-center"> Top Movies List</h2>
           <Filter
             filterdItems={this.state.genres.map((genre, idx) => ({
               _id: idx,
